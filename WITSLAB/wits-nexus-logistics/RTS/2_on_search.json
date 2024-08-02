@@ -1,96 +1,102 @@
 {
-  "context": {
-    "action": "on_search",
-    "bap_id": "ondc-api.kiko.live/ondc-seller-v2",
-    "bap_uri": "https://ondc-api.kiko.live/ondc-seller-v2",
-    "city": "std:0172",
-    "core_version": "1.2.0",
-    "country": "IND",
-    "domain": "nic2004:60232",
-    "message_id": "13a77275-10f1-4d1e-b1cd-115383623f86",
-    "timestamp": "2024-05-28T14:22:15.558Z",
-    "transaction_id": "60f436ad-9e32-4e1a-879b-a66f37e39e80",
-    "bpp_id": "wits-ref-logistics-app.thewitslab.com",
-    "bpp_uri": "https://wits-ref-logistics-app.thewitslab.com"
-  },
-  "message": {
-    "catalog": {
-      "bpp/descriptor": { "name": "WITS Nexus Logistics" },
-      "bpp/providers": [
-        {
-          "id": "a19bea7e-3e3d-4397-af4b-ae4782c95546",
-          "descriptor": {
-            "name": "WITS Nexus Logistics",
-            "long_desc": "WITS Nexus Logistics to delivery your goods in one go",
-            "short_desc": "WITS Nexus Logistics to delivery your goods in one go"
-          },
-          "categories": [
-            {
-              "id": "Immediate Delivery",
-              "time": {
-                "label": "TAT",
-                "duration": "PT60M",
-                "timestamp": "2024-05-28"
-              }
-            }
-          ],
-          "fulfillments": [
-            {
-              "id": "a5f593fb-6ada-4804-b07f-4e72bf2bb9c1",
-              "type": "Delivery",
-              "start": { "time": { "duration": "PT15M" } },
-              "tags": [
+    "context": {
+        "domain": "nic2004:60232",
+        "action": "on_search",
+        "core_version": "1.2.0",
+        "bap_id": "ondc-api.kiko.live/ondc-seller-v2",
+        "bap_uri": "https://ondc-api.kiko.live/ondc-seller-v2",
+        "transaction_id": "c8f8688d-975d-49cb-bfa3-5997c7978eca",
+        "message_id": "fc3008e6-74b7-4d81-a48d-1917050a1ae4",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2024-07-15T12:44:56.578Z",
+        "bpp_id": "wits-ref-logistics-app.thewitslab.com",
+        "bpp_uri": "https://wits-ref-logistics-app.thewitslab.com"
+    },
+    "message": {
+        "catalog": {
+            "bpp/descriptor": {
+                "name": "WITS Nexus Logistics"
+            },
+            "bpp/providers": [
                 {
-                  "code": "distance",
-                  "list": [
-                    { "code": "motorable_distance_type", "value": "kilometer" },
-                    { "code": "motorable_distance", "value": "45.00" }
-                  ]
+                    "id": "82e0becf-45b7-4066-985c-e8e4bb79c367",
+                    "descriptor": {
+                        "name": "WITS Nexus Logistics",
+                        "long_desc": "WITS Nexus Logistics to delivery your goods in one go",
+                        "short_desc": "WITS Nexus Logistics to delivery your goods in one go"
+                    },
+                    "categories": [
+                        {
+                            "id": "Standard Delivery",
+                            "time": {
+                                "label": "TAT",
+                                "duration": "P4D",
+                                "timestamp": "2024-07-19"
+                            }
+                        }
+                    ],
+                    "fulfillments": [
+                        {
+                            "id": "854496ed-be2c-40bb-9816-870122e912be",
+                            "type": "Delivery",
+                            "start": {
+                                "time": {
+                                    "duration": "P1D"
+                                }
+                            }
+                        },
+                        {
+                            "id": "76cdda48-765b-404e-86a3-553389562c1c",
+                            "type": "RTO"
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "Standard",
+                            "parent_item_id": "",
+                            "category_id": "Standard Delivery",
+                            "fulfillment_id": "854496ed-be2c-40bb-9816-870122e912be",
+                            "descriptor": {
+                                "code": "P2H2P",
+                                "name": "Standard Delivery",
+                                "long_desc": "Upto 4 day for Delivery",
+                                "short_desc": "Upto 4 day for Delivery"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "15.00"
+                            },
+                            "time": {
+                                "label": "TAT",
+                                "duration": "P4D",
+                                "timestamp": "2024-07-15"
+                            }
+                        },
+                        {
+                            "id": "rto",
+                            "parent_item_id": "Standard",
+                            "category_id": "Standard Delivery",
+                            "fulfillment_id": "76cdda48-765b-404e-86a3-553389562c1c",
+                            "descriptor": {
+                                "code": "P2H2P",
+                                "name": "RTO quote",
+                                "short_desc": "RTO quote",
+                                "long_desc": "RTO quote"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "4.50"
+                            },
+                            "time": {
+                                "label": "TAT",
+                                "duration": "P4D",
+                                "timestamp": "2024-07-19"
+                            }
+                        }
+                    ]
                 }
-              ]
-            },
-            { "id": "820cb1e9-6d6d-4817-8bd6-7661f0ddc688", "type": "RTO" }
-          ],
-          "items": [
-            {
-              "id": "Standard",
-              "parent_item_id": "",
-              "category_id": "Immediate Delivery",
-              "fulfillment_id": "a5f593fb-6ada-4804-b07f-4e72bf2bb9c1",
-              "descriptor": {
-                "code": "P2P",
-                "name": "Immediate Delivery",
-                "long_desc": "Upto 60 mins for Delivery",
-                "short_desc": "Upto 60 mins for Delivery"
-              },
-              "price": { "currency": "INR", "value": "88.62" },
-              "time": {
-                "label": "TAT",
-                "duration": "PT60M",
-                "timestamp": "2024-05-28"
-              }
-            },
-            {
-              "id": "rto",
-              "parent_item_id": "Standard",
-              "category_id": "Immediate Delivery",
-              "fulfillment_id": "820cb1e9-6d6d-4817-8bd6-7661f0ddc688",
-              "descriptor": {
-                "code": "P2P",
-                "name": "RTO quote",
-                "short_desc": "RTO quote",
-                "long_desc": "RTO quote"
-              },
-              "price": { "currency": "INR", "value": "26.59" },
-              "time": {
-                "label": "TAT",
-                "duration": "PT60M",
-                "timestamp": "2024-05-28"
-              }
-            }
-          ]
+            ]
         }
-      ]
     }
-  }
 }

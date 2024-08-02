@@ -1,0 +1,244 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "action": "on_status",
+        "core_version": "1.2.0",
+        "bap_id": "ondc-api.kiko.live/ondc-seller-v2",
+        "bap_uri": "https://ondc-api.kiko.live/ondc-seller-v2",
+        "bpp_id": "wits-ref-logistics-app.thewitslab.com",
+        "bpp_uri": "https://wits-ref-logistics-app.thewitslab.com",
+        "transaction_id": "8d2fccf2-3f03-4f5c-9b21-486b0050bdbe",
+        "message_id": "f7772c1a-be44-4cb2-9b45-3300673789ed",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2024-07-29T13:13:15.061Z"
+    },
+    "message": {
+        "order": {
+            "id": "2024-07-29-44647123",
+            "state": "In-progress",
+            "provider": {
+                "id": "8550f311-c54f-4bdc-965e-95f854f7a500"
+            },
+            "items": [
+                {
+                    "descriptor": {
+                        "code": "P2H2P"
+                    },
+                    "time": {
+                        "label": "TAT",
+                        "duration": "P4D",
+                        "timestamp": "2024-07-29"
+                    },
+                    "id": "Standard",
+                    "fulfillment_id": "65871276-baa1-444a-87e8-ad61cb982fd4",
+                    "category_id": "Standard Delivery"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "15.00"
+                },
+                "breakup": [
+                    {
+                        "price": {
+                            "currency": "INR",
+                            "value": "15.00"
+                        },
+                        "@ondc/org/item_id": "Express",
+                        "@ondc/org/title_type": "delivery"
+                    },
+                    {
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "@ondc/org/item_id": "Express",
+                        "@ondc/org/title_type": "tax"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "agent": {
+                        "name": "Joanne Windler",
+                        "phone": "9919528952"
+                    },
+                    "vehicle": {
+                        "registration": "KA 54 XYZ 1234"
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "At-destination-hub"
+                        }
+                    },
+                    "id": "65871276-baa1-444a-87e8-ad61cb982fd4",
+                    "type": "Delivery",
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2024-07-29T11:36:46.926Z",
+                                "end": "2024-07-29T11:51:46.926Z"
+                            },
+                            "duration": "PT15M",
+                            "timestamp": "2024-07-29T13:13:06.011Z"
+                        },
+                        "person": {
+                            "name": "Suryansh Kourav"
+                        },
+                        "location": {
+                            "gps": "12.982017, 77.587606",
+                            "address": {
+                                "name": "Surya Shop",
+                                "building": "H-123, Surya Shop",
+                                "locality": "Lal Bangalore Bazaar, Bangalore, Karnataka 560001, India",
+                                "city": "Bangalore",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560001"
+                            }
+                        },
+                        "contact": {
+                            "phone": "7689965008",
+                            "email": "suryaKouraav@gmail.com"
+                        },
+                        "instructions": {
+                            "short_desc": "Shipping label or proof of delivery details",
+                            "images": [
+                                "https://ref-logistics-app-staging-bucket.s3.ap-south-1.amazonaws.com/1696662276710.jpeg",
+                                "https://ref-logistics-app-staging-bucket.s3.ap-south-1.amazonaws.com/2446662276711.jpeg"
+                            ]
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "range": {
+                                "start": "2024-07-29T11:36:46.926Z",
+                                "end": "2024-07-29T11:51:46.926Z"
+                            }
+                        },
+                        "person": {
+                            "name": "apoorv"
+                        },
+                        "location": {
+                            "gps": "30.711624,76.710334",
+                            "address": {
+                                "name": "apoorv",
+                                "building": "342",
+                                "locality": "Balongi",
+                                "city": "S.A.S.Nagar (Mohali)",
+                                "state": "Punjab",
+                                "country": "India",
+                                "area_code": "160055"
+                            }
+                        },
+                        "contact": {
+                            "phone": "34543535",
+                            "email": "help@kiko.live"
+                        },
+                        "instructions": {
+                            "code": "2",
+                            "short_desc": "6532"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "code": "tracking",
+                            "list": [
+                                {
+                                    "code": "gps_enabled",
+                                    "value": "no"
+                                },
+                                {
+                                    "code": "url_enabled",
+                                    "value": "yes"
+                                }
+                            ]
+                        }
+                    ],
+                    "tracking": true,
+                    "@ondc/org/awb_no": "1227262193237777"
+                }
+            ],
+            "payment": {
+                "collected_by": "BAP",
+                "type": "POST-FULFILLMENT",
+                "status": "NOT-PAID"
+            },
+            "billing": {
+                "name": "apoorv",
+                "address": {
+                    "name": "apoorv",
+                    "building": "342",
+                    "locality": "Balongi",
+                    "city": "S.A.S.Nagar (Mohali)",
+                    "state": "Punjab",
+                    "country": "India",
+                    "area_code": "160055"
+                },
+                "tax_number": "06BZAHM6385P6Z2",
+                "phone": "34543535",
+                "email": "apoorv.saxena@thewitslab.com",
+                "created_at": "2024-07-29T11:36:23.769Z",
+                "updated_at": "2024-07-29T11:36:23.769Z"
+            },
+            "@ondc/org/linked_order": {
+                "provider": {
+                    "descriptor": {
+                        "name": "Surya Shop"
+                    },
+                    "address": {
+                        "name": "Surya Shop",
+                        "building": "H-123, Surya Shop",
+                        "locality": "Lal Bangalore Bazaar, Bangalore, Karnataka 560001, India",
+                        "city": "Bangalore",
+                        "state": "Karnataka",
+                        "country": "India",
+                        "area_code": "560001"
+                    }
+                },
+                "order": {
+                    "weight": {
+                        "unit": "kilogram",
+                        "value": 0.455
+                    },
+                    "id": "2024-07-29-507720",
+                    "dimensions": {
+                        "length": {
+                            "unit": "centimeter",
+                            "value": 23.5
+                        },
+                        "breadth": {
+                            "unit": "centimeter",
+                            "value": 17.5
+                        },
+                        "height": {
+                            "unit": "centimeter",
+                            "value": 6
+                        }
+                    }
+                },
+                "items": [
+                    {
+                        "descriptor": {
+                            "name": "7 Up Product No. 2"
+                        },
+                        "quantity": {
+                            "measure": {
+                                "value": 500,
+                                "unit": "millilitre"
+                            },
+                            "count": 1
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "35"
+                        },
+                        "category_id": "Grocery"
+                    }
+                ]
+            }
+        }
+    }
+}

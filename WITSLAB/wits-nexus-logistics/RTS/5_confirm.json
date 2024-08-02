@@ -1,165 +1,236 @@
 {
-  "context": {
-    "domain": "nic2004:60232",
-    "country": "IND",
-    "city": "std:0172",
-    "action": "confirm",
-    "core_version": "1.2.0",
-    "bap_id": "ondc-api.kiko.live/ondc-seller-v2",
-    "bap_uri": "https://ondc-api.kiko.live/ondc-seller-v2",
-    "bpp_id": "wits-ref-logistics-app.thewitslab.com",
-    "bpp_uri": "https://wits-ref-logistics-app.thewitslab.com",
-    "message_id": "90020ff5-cf79-484f-9289-375b106d8a24",
-    "timestamp": "2024-05-28T14:22:46.435Z",
-    "transaction_id": "60f436ad-9e32-4e1a-879b-a66f37e39e80",
-    "ttl": "PT30S"
-  },
-  "message": {
-    "order": {
-      "id": "2024-05-28-967037",
-      "state": "Created",
-      "provider": { "id": "a19bea7e-3e3d-4397-af4b-ae4782c95546" },
-      "items": [
-        {
-          "id": "Standard",
-          "category_id": "Immediate Delivery",
-          "fulfillment_id": "a5f593fb-6ada-4804-b07f-4e72bf2bb9c1",
-          "descriptor": { "code": "P2P" },
-          "time": {
-            "label": "TAT",
-            "duration": "PT60M",
-            "timestamp": "2024-05-28"
-          }
-        }
-      ],
-      "quote": {
-        "price": { "currency": "INR", "value": "88.62" },
-        "breakup": [
-          {
-            "@ondc/org/item_id": "Standard",
-            "@ondc/org/title_type": "delivery",
-            "price": { "currency": "INR", "value": "84.00" }
-          },
-          {
-            "@ondc/org/item_id": "Standard",
-            "@ondc/org/title_type": "tax",
-            "price": { "currency": "INR", "value": "4.62" }
-          }
-        ]
-      },
-      "fulfillments": [
-        {
-          "id": "a5f593fb-6ada-4804-b07f-4e72bf2bb9c1",
-          "type": "Delivery",
-          "start": {
-            "time": { "duration": "PT15M" },
-            "person": { "name": "Vijendra Patidar" },
-            "location": {
-              "gps": "19.17653453, 72.947534534",
-              "address": {
-                "name": "Vijendra Patidar",
-                "building": "Anand Vihar Colony",
-                "locality": "Mulund West",
-                "city": "Mumbai",
-                "state": "Maharashtra",
-                "country": "India",
-                "area_code": "400080"
-              }
-            },
-            "contact": { "phone": "9009120913", "email": "vijendra@gmail.com" },
-            "instructions": {
-              "code": "3",
-              "short_desc": "300245",
-              "long_desc": "Order Pick Up Confirmation Code"
-            }
-          },
-          "end": {
-            "person": { "name": "Amit kumar" },
-            "location": {
-              "gps": "19.175574,72.951214",
-              "address": {
-                "name": "Amit kumar",
-                "building": "Building 1",
-                "locality": "Mulund Dd Road",
-                "city": "Mumbai",
-                "state": "Maharashtra",
-                "country": "India",
-                "area_code": "400080"
-              }
-            },
-            "contact": { "phone": "8988154161" },
-            "instructions": {
-              "code": "2",
-              "short_desc": "533014",
-              "long_desc": "Delivery Confirmation Code"
-            }
-          },
-          "tags": [
-            {
-              "code": "state",
-              "list": [{ "code": "ready_to_ship", "value": "yes" }]
-            },
-            {
-              "code": "rto_action",
-              "list": [{ "code": "return_to_origin", "value": "yes" }]
-            }
-          ]
-        }
-      ],
-      "billing": {
-        "name": "Amit kumar",
-        "address": {
-          "name": "Amit kumar",
-          "building": "Building 1",
-          "locality": "Mulund Dd Road",
-          "city": "Mumbai",
-          "state": "Maharashtra",
-          "country": "India",
-          "area_code": "400080"
-        },
-        "tax_number": "22AAAAA0000A1Z5",
-        "phone": "8988154161",
-        "email": "amit.kumar@thewitslab.com",
-        "created_at": "2024-05-28T14:22:23.401Z",
-        "updated_at": "2024-05-28T14:22:23.401Z"
-      },
-      "payment": { "collected_by": "BAP", "type": "POST-FULFILLMENT" },
-      "@ondc/org/linked_order": {
-        "items": [
-          {
-            "category_id": "Grocery",
-            "descriptor": { "name": "Amul ghee" },
-            "quantity": {
-              "count": 1,
-              "measure": { "unit": "unit", "value": 5 }
-            },
-            "price": { "currency": "INR", "value": "2400" }
-          }
-        ],
-        "provider": {
-          "descriptor": { "name": "Vijendra Grocery Store" },
-          "address": {
-            "name": "Vijendra Patidar",
-            "building": "Anand Vihar Colony",
-            "locality": "Mulund West",
-            "city": "Mumbai",
-            "state": "Maharashtra",
-            "country": "India",
-            "area_code": "400080"
-          }
-        },
+    "context": {
+        "domain": "nic2004:60232",
+        "action": "confirm",
+        "core_version": "1.2.0",
+        "bap_id": "ondc-api.kiko.live/ondc-seller-v2",
+        "bap_uri": "https://ondc-api.kiko.live/ondc-seller-v2",
+        "bpp_id": "wits-ref-logistics-app.thewitslab.com",
+        "bpp_uri": "https://wits-ref-logistics-app.thewitslab.com",
+        "transaction_id": "c8f8688d-975d-49cb-bfa3-5997c7978eca",
+        "message_id": "d95a414d-7398-4832-b2db-79829a5b189a",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2024-07-15T12:45:12.311Z",
+        "ttl": "PT30S"
+    },
+    "message": {
         "order": {
-          "id": "2024-05-28-967037",
-          "weight": { "unit": "unit", "value": 5 },
-          "dimensions": {
-            "length": { "unit": "centimeter", "value": 23.5 },
-            "breadth": { "unit": "centimeter", "value": 17.5 },
-            "height": { "unit": "centimeter", "value": 6 }
-          }
+            "id": "2024-07-15-50986854",
+            "state": "Created",
+            "provider": {
+                "id": "82e0becf-45b7-4066-985c-e8e4bb79c367"
+            },
+            "items": [
+                {
+                    "id": "Standard",
+                    "category_id": "Standard Delivery",
+                    "fulfillment_id": "854496ed-be2c-40bb-9816-870122e912be",
+                    "descriptor": {
+                        "code": "P2H2P"
+                    },
+                    "time": {
+                        "label": "TAT",
+                        "duration": "P4D",
+                        "timestamp": "2024-07-15"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "15.00"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "Express",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "15.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Express",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "854496ed-be2c-40bb-9816-870122e912be",
+                    "type": "Delivery",
+                    "start": {
+                        "time": {
+                            "duration": "P1D"
+                        },
+                        "person": {
+                            "name": "Vijendra Patidar"
+                        },
+                        "location": {
+                            "gps": "12.982017, 77.587606",
+                            "address": {
+                                "name": "Vijendra Grocery Store",
+                                "building": "H-123, Surya Shop",
+                                "locality": "Lal Bangalore Bazaar",
+                                "city": "Bangalore",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560001"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9009120913",
+                            "email": "vijendra@linkites.com"
+                        },
+                        "instructions": {
+                            "code": "3",
+                            "short_desc": "6266",
+                            "long_desc": "Order Pick Up Confirmation Code"
+                        }
+                    },
+                    "end": {
+                        "person": {
+                            "name": "Apoorv"
+                        },
+                        "location": {
+                            "gps": "28.678994,77.068735",
+                            "address": {
+                                "name": "Apoorv",
+                                "building": "202",
+                                "locality": "Inderjeet Gahlaut Marg",
+                                "city": "New Delhi",
+                                "state": "Delhi",
+                                "country": "IND",
+                                "area_code": "110041"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9878678867",
+                            "email": "apoorv.saxena@thewitslab.com"
+                        },
+                        "instructions": {
+                            "code": "1",
+                            "short_desc": "3171",
+                            "long_desc": "Delivery Confirmation Code"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "code": "state",
+                            "list": [
+                                {
+                                    "code": "ready_to_ship",
+                                    "value": "yes"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "rto_action",
+                            "list": [
+                                {
+                                    "code": "return_to_origin",
+                                    "value": "yes"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "billing": {
+                "name": "Apoorv",
+                "address": {
+                    "name": "Apoorv",
+                    "building": "202",
+                    "locality": "Inderjeet Gahlaut Marg",
+                    "city": "New Delhi",
+                    "state": "Delhi",
+                    "country": "IND",
+                    "area_code": "110041"
+                },
+                "tax_number": "22AAAAA0000A1Z5",
+                "phone": "9878678867",
+                "email": "apoorv.saxena@thewitslab.com",
+                "created_at": "2024-07-15T12:45:10.739Z",
+                "updated_at": "2024-07-15T12:45:10.739Z"
+            },
+            "payment": {
+                "collected_by": "BAP",
+                "type": "POST-FULFILLMENT"
+            },
+            "@ondc/org/linked_order": {
+                "items": [
+                    {
+                        "category_id": "Grocery",
+                        "descriptor": {
+                            "name": "Aashirvaad Coriander Powder, 100 G"
+                        },
+                        "quantity": {
+                            "count": 1,
+                            "measure": {
+                                "unit": "gram",
+                                "value": 100
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "46"
+                        }
+                    }
+                ],
+                "provider": {
+                    "descriptor": {
+                        "name": "Vijendra Grocery Store"
+                    },
+                    "address": {
+                        "name": "Vijendra Grocery Store",
+                        "building": "H-123, Surya Shop",
+                        "locality": "Lal Bangalore Bazaar",
+                        "city": "Bangalore",
+                        "state": "Karnataka",
+                        "country": "India",
+                        "area_code": "560001"
+                    }
+                },
+                "order": {
+                    "id": "2024-07-15-671562",
+                    "weight": {
+                        "unit": "gram",
+                        "value": 100
+                    },
+                    "dimensions": {
+                        "length": {
+                            "unit": "centimeter",
+                            "value": 23.5
+                        },
+                        "breadth": {
+                            "unit": "centimeter",
+                            "value": 17.5
+                        },
+                        "height": {
+                            "unit": "centimeter",
+                            "value": 6
+                        }
+                    }
+                }
+            },
+            "tags": [
+                {
+                    "code": "bap_terms",
+                    "list": [
+                        {
+                            "code": "accept_bpp_terms",
+                            "value": "Y"
+                        }
+                    ]
+                }
+            ],
+            "created_at": "2024-07-15T12:45:12.311Z",
+            "updated_at": "2024-07-15T12:45:12.311Z"
         }
-      },
-      "created_at": "2024-05-28T14:22:46.435Z",
-      "updated_at": "2024-05-28T14:22:46.435Z"
     }
-  }
 }

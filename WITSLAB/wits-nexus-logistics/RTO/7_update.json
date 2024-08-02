@@ -1,0 +1,62 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "action": "update",
+        "core_version": "1.2.0",
+        "bap_id": "ondc-api.kiko.live/ondc-seller-v2",
+        "bap_uri": "https://ondc-api.kiko.live/ondc-seller-v2",
+        "bpp_id": "wits-ref-logistics-app.thewitslab.com",
+        "bpp_uri": "https://wits-ref-logistics-app.thewitslab.com",
+        "transaction_id": "d44b4ffd-c7ed-4aba-8c2d-9c3640ebd095",
+        "message_id": "1dcbfe85-fc25-4498-96c2-83e09f5bd96e",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2024-07-29T11:37:29.099Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "update_target": "fulfillment",
+        "order": {
+            "id": "2024-07-29-47939864",
+            "items": [
+                {
+                    "descriptor": {
+                        "code": "P2H2P"
+                    },
+                    "id": "Standard",
+                    "category_id": "Standard Delivery"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "undefined",
+                    "type": "Delivery",
+                    "start": {
+                        "instructions": {
+                            "code": "3",
+                            "short_desc": "2883"
+                        }
+                    },
+                    "end": {
+                        "instructions": {
+                            "code": "2",
+                            "short_desc": "1461"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "code": "state",
+                            "list": [
+                                {
+                                    "code": "ready_to_ship",
+                                    "value": "yes"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "updated_at": "2024-07-29T11:37:29.099Z"
+        }
+    }
+}

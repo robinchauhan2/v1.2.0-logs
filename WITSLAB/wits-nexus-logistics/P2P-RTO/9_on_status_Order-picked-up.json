@@ -1,0 +1,257 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "action": "on_status",
+        "core_version": "1.2.0",
+        "bap_id": "ondc-api.kiko.live/ondc-seller-v2",
+        "bap_uri": "https://ondc-api.kiko.live/ondc-seller-v2",
+        "bpp_id": "wits-ref-logistics-app.thewitslab.com",
+        "bpp_uri": "https://wits-ref-logistics-app.thewitslab.com",
+        "transaction_id": "97c60487-3b10-453c-b999-94125eac0832",
+        "message_id": "d26e0d51-9e1e-44c2-a666-8f2082f7079b",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2024-07-26T09:18:28.328Z"
+    },
+    "message": {
+        "order": {
+            "id": "2024-07-26-70036735",
+            "state": "In-progress",
+            "provider": {
+                "id": "8d5eeba7-c9fd-4d27-bd83-66cb7b7f702b"
+            },
+            "items": [
+                {
+                    "descriptor": {
+                        "code": "P2P"
+                    },
+                    "time": {
+                        "label": "TAT",
+                        "duration": "PT60M",
+                        "timestamp": "2024-07-26"
+                    },
+                    "id": "Standard",
+                    "fulfillment_id": "b5e57b7a-b279-41f6-b6d2-adcdc708aa44",
+                    "category_id": "Immediate Delivery"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "99.12"
+                },
+                "breakup": [
+                    {
+                        "price": {
+                            "currency": "INR",
+                            "value": "84.00"
+                        },
+                        "@ondc/org/item_id": "Standard",
+                        "@ondc/org/title_type": "delivery"
+                    },
+                    {
+                        "price": {
+                            "currency": "INR",
+                            "value": "15.12"
+                        },
+                        "@ondc/org/item_id": "Standard",
+                        "@ondc/org/title_type": "tax"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "agent": {
+                        "name": "Dr. Fernando Nolan",
+                        "phone": "7169987126"
+                    },
+                    "vehicle": {
+                        "registration": "KA 54 XYZ 1234"
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-picked-up"
+                        }
+                    },
+                    "id": "b5e57b7a-b279-41f6-b6d2-adcdc708aa44",
+                    "type": "Delivery",
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2024-07-26T09:25:36.615Z",
+                                "end": "2024-07-26T09:40:36.615Z"
+                            },
+                            "duration": "PT15M",
+                            "timestamp": "2024-07-26T09:18:28.196Z"
+                        },
+                        "person": {
+                            "name": "Suryansh Kourav"
+                        },
+                        "location": {
+                            "gps": "12.982017, 77.587606",
+                            "address": {
+                                "name": "Surya Shop",
+                                "building": "H-123, Surya Shop",
+                                "locality": "Lal Bangalore Bazaar, Bangalore, Karnataka 560001, India",
+                                "city": "Bangalore",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560001"
+                            }
+                        },
+                        "contact": {
+                            "phone": "7689965008",
+                            "email": "suryaKouraav@gmail.com"
+                        },
+                        "instructions": {
+                            "code": "3",
+                            "short_desc": "9774"
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "range": {
+                                "start": "2024-07-26T10:00:36.615Z",
+                                "end": "2024-07-26T10:15:36.615Z"
+                            }
+                        },
+                        "person": {
+                            "name": "Aman"
+                        },
+                        "location": {
+                            "gps": "12.980737,77.594014",
+                            "address": {
+                                "name": "Aman",
+                                "building": "Wits lab City Heart",
+                                "locality": "Bangalore",
+                                "city": "Bangalore North",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560001"
+                            }
+                        },
+                        "contact": {
+                            "phone": "8707507996",
+                            "email": "help@kiko.live"
+                        },
+                        "instructions": {
+                            "code": "2",
+                            "short_desc": "9989"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "code": "tracking",
+                            "list": [
+                                {
+                                    "code": "gps_enabled",
+                                    "value": "yes"
+                                },
+                                {
+                                    "code": "url_enabled",
+                                    "value": "no"
+                                }
+                            ]
+                        }
+                    ],
+                    "tracking": true
+                }
+            ],
+            "payment": {
+                "collected_by": "BAP",
+                "type": "POST-FULFILLMENT",
+                "status": "NOT-PAID"
+            },
+            "billing": {
+                "name": "Aman",
+                "address": {
+                    "name": "Aman",
+                    "building": "Wits lab City Heart",
+                    "locality": "Bangalore",
+                    "city": "Bangalore North",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area_code": "560001"
+                },
+                "tax_number": "06BZAHM6385P6Z2",
+                "phone": "8707507996",
+                "email": "aman.kumar@thewitslab.com",
+                "created_at": "2024-07-26T09:14:16.101Z",
+                "updated_at": "2024-07-26T09:14:16.101Z"
+            },
+            "@ondc/org/linked_order": {
+                "provider": {
+                    "descriptor": {
+                        "name": "Surya Shop"
+                    },
+                    "address": {
+                        "name": "Surya Shop",
+                        "building": "H-123, Surya Shop",
+                        "locality": "Lal Bangalore Bazaar, Bangalore, Karnataka 560001, India",
+                        "city": "Bangalore",
+                        "state": "Karnataka",
+                        "country": "India",
+                        "area_code": "560001"
+                    }
+                },
+                "order": {
+                    "weight": {
+                        "unit": "kilogram",
+                        "value": 0.819
+                    },
+                    "id": "2024-07-26-299609",
+                    "dimensions": {
+                        "length": {
+                            "unit": "centimeter",
+                            "value": 23.5
+                        },
+                        "breadth": {
+                            "unit": "centimeter",
+                            "value": 17.5
+                        },
+                        "height": {
+                            "unit": "centimeter",
+                            "value": 6
+                        }
+                    }
+                },
+                "items": [
+                    {
+                        "descriptor": {
+                            "name": "7 Up 600 Ml Bottle"
+                        },
+                        "quantity": {
+                            "measure": {
+                                "value": 400,
+                                "unit": "millilitre"
+                            },
+                            "count": 1
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "20"
+                        },
+                        "category_id": "Grocery"
+                    },
+                    {
+                        "descriptor": {
+                            "name": "7 Up Product No. 4"
+                        },
+                        "quantity": {
+                            "measure": {
+                                "value": 500,
+                                "unit": "millilitre"
+                            },
+                            "count": 1
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "35"
+                        },
+                        "category_id": "Grocery"
+                    }
+                ]
+            }
+        }
+    }
+}
