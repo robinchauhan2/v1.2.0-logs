@@ -5,19 +5,19 @@
         "core_version": "1.2.0",
         "bap_id": "ondc-api.kiko.live/ondc-seller-v2",
         "bap_uri": "https://ondc-api.kiko.live/ondc-seller-v2",
-        "bpp_id": "wits-ref-logistics-app.thewitslab.com",
-        "bpp_uri": "https://wits-ref-logistics-app.thewitslab.com",
-        "transaction_id": "97c60487-3b10-453c-b999-94125eac0832",
-        "message_id": "4361b1d1-019b-4adf-a0e4-dd788fac29ec",
+        "bpp_id": "logistics-bpp-preprod.bharatvyapaar.com",
+        "bpp_uri": "https://logistics-bpp-preprod.bharatvyapaar.com",
+        "transaction_id": "dbdb8bcb-9bf3-4f6f-b256-af5441b6e6a3",
+        "message_id": "8a67f6de-5f69-4fda-a0cb-e9df8eacdbc6",
         "city": "std:080",
         "country": "IND",
-        "timestamp": "2024-07-26T09:15:36.205Z",
+        "timestamp": "2024-08-01T07:49:57.083Z",
         "ttl": "PT30S"
     },
     "message": {
         "update_target": "fulfillment",
         "order": {
-            "id": "2024-07-26-70036735",
+            "id": "2024-08-01-99238345",
             "items": [
                 {
                     "descriptor": {
@@ -34,13 +34,13 @@
                     "start": {
                         "instructions": {
                             "code": "3",
-                            "short_desc": "9774"
+                            "short_desc": "3358"
                         }
                     },
                     "end": {
                         "instructions": {
                             "code": "2",
-                            "short_desc": "9989"
+                            "short_desc": "6708"
                         }
                     },
                     "tags": [
@@ -56,7 +56,7 @@
                     ]
                 }
             ],
-            "updated_at": "2024-07-26T09:15:36.205Z"
+            "updated_at": "2024-08-01T07:49:57.083Z"
         }
     }
 }

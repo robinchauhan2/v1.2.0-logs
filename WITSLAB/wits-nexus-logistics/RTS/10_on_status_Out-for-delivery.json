@@ -5,20 +5,20 @@
         "core_version": "1.2.0",
         "bap_id": "ondc-api.kiko.live/ondc-seller-v2",
         "bap_uri": "https://ondc-api.kiko.live/ondc-seller-v2",
-        "bpp_id": "wits-ref-logistics-app.thewitslab.com",
-        "bpp_uri": "https://wits-ref-logistics-app.thewitslab.com",
-        "transaction_id": "97c60487-3b10-453c-b999-94125eac0832",
-        "message_id": "bdb3ef01-88f9-436a-8d87-8cac32fa2c17",
+        "bpp_id": "logistics-bpp-preprod.bharatvyapaar.com",
+        "bpp_uri": "https://logistics-bpp-preprod.bharatvyapaar.com",
+        "transaction_id": "dbdb8bcb-9bf3-4f6f-b256-af5441b6e6a3",
+        "message_id": "abd4a247-ca3b-48c8-9669-63e92f470f53",
         "city": "std:080",
         "country": "IND",
-        "timestamp": "2024-07-26T09:18:43.434Z"
+        "timestamp": "2024-08-01T08:05:48.416Z"
     },
     "message": {
         "order": {
-            "id": "2024-07-26-70036735",
+            "id": "2024-08-01-99238345",
             "state": "In-progress",
             "provider": {
-                "id": "8d5eeba7-c9fd-4d27-bd83-66cb7b7f702b"
+                "id": "8550f311-c54f-4bdc-965e-95f854f7a500"
             },
             "items": [
                 {
@@ -28,10 +28,10 @@
                     "time": {
                         "label": "TAT",
                         "duration": "PT60M",
-                        "timestamp": "2024-07-26"
+                        "timestamp": "2024-08-01"
                     },
                     "id": "Standard",
-                    "fulfillment_id": "b5e57b7a-b279-41f6-b6d2-adcdc708aa44",
+                    "fulfillment_id": "a314f309-0776-4b1a-af29-4fdb4642a6e2",
                     "category_id": "Immediate Delivery"
                 }
             ],
@@ -62,8 +62,8 @@
             "fulfillments": [
                 {
                     "agent": {
-                        "name": "Dr. Fernando Nolan",
-                        "phone": "7169987126"
+                        "name": "Joanne Windler",
+                        "phone": "9919528952"
                     },
                     "vehicle": {
                         "registration": "KA 54 XYZ 1234"
@@ -73,16 +73,16 @@
                             "code": "Out-for-delivery"
                         }
                     },
-                    "id": "b5e57b7a-b279-41f6-b6d2-adcdc708aa44",
+                    "id": "a314f309-0776-4b1a-af29-4fdb4642a6e2",
                     "type": "Delivery",
                     "start": {
                         "time": {
                             "range": {
-                                "start": "2024-07-26T09:25:36.615Z",
-                                "end": "2024-07-26T09:40:36.615Z"
+                                "start": "2024-08-01T07:59:57.440Z",
+                                "end": "2024-08-01T08:14:57.440Z"
                             },
                             "duration": "PT15M",
-                            "timestamp": "2024-07-26T09:18:28.196Z"
+                            "timestamp": "2024-08-01T08:05:38.365Z"
                         },
                         "person": {
                             "name": "Suryansh Kourav"
@@ -105,24 +105,24 @@
                         },
                         "instructions": {
                             "code": "3",
-                            "short_desc": "9774"
+                            "short_desc": "3358"
                         }
                     },
                     "end": {
                         "time": {
                             "range": {
-                                "start": "2024-07-26T10:00:36.615Z",
-                                "end": "2024-07-26T10:15:36.615Z"
+                                "start": "2024-08-01T08:34:57.441Z",
+                                "end": "2024-08-01T08:49:57.441Z"
                             }
                         },
                         "person": {
-                            "name": "Aman"
+                            "name": "apoorv bangalore"
                         },
                         "location": {
                             "gps": "12.980737,77.594014",
                             "address": {
-                                "name": "Aman",
-                                "building": "Wits lab City Heart",
+                                "name": "apoorv bangalore",
+                                "building": "423",
                                 "locality": "Bangalore",
                                 "city": "Bangalore North",
                                 "state": "Karnataka",
@@ -131,12 +131,12 @@
                             }
                         },
                         "contact": {
-                            "phone": "8707507996",
+                            "phone": "4534554354",
                             "email": "help@kiko.live"
                         },
                         "instructions": {
                             "code": "2",
-                            "short_desc": "9989"
+                            "short_desc": "6708"
                         }
                     },
                     "tags": [
@@ -163,10 +163,10 @@
                 "status": "NOT-PAID"
             },
             "billing": {
-                "name": "Aman",
+                "name": "apoorv bangalore",
                 "address": {
-                    "name": "Aman",
-                    "building": "Wits lab City Heart",
+                    "name": "apoorv bangalore",
+                    "building": "423",
                     "locality": "Bangalore",
                     "city": "Bangalore North",
                     "state": "Karnataka",
@@ -174,10 +174,10 @@
                     "area_code": "560001"
                 },
                 "tax_number": "06BZAHM6385P6Z2",
-                "phone": "8707507996",
-                "email": "aman.kumar@thewitslab.com",
-                "created_at": "2024-07-26T09:14:16.101Z",
-                "updated_at": "2024-07-26T09:14:16.101Z"
+                "phone": "4534554354",
+                "email": "apoorv.saxena@thewitslab.com",
+                "created_at": "2024-08-01T07:49:21.825Z",
+                "updated_at": "2024-08-01T07:49:21.825Z"
             },
             "@ondc/org/linked_order": {
                 "provider": {
@@ -197,9 +197,9 @@
                 "order": {
                     "weight": {
                         "unit": "kilogram",
-                        "value": 0.819
+                        "value": 0.455
                     },
-                    "id": "2024-07-26-299609",
+                    "id": "2024-08-01-728615",
                     "dimensions": {
                         "length": {
                             "unit": "centimeter",
@@ -218,24 +218,7 @@
                 "items": [
                     {
                         "descriptor": {
-                            "name": "7 Up 600 Ml Bottle"
-                        },
-                        "quantity": {
-                            "measure": {
-                                "value": 400,
-                                "unit": "millilitre"
-                            },
-                            "count": 1
-                        },
-                        "price": {
-                            "currency": "INR",
-                            "value": "20"
-                        },
-                        "category_id": "Grocery"
-                    },
-                    {
-                        "descriptor": {
-                            "name": "7 Up Product No. 4"
+                            "name": "7 Up Product No. 2"
                         },
                         "quantity": {
                             "measure": {

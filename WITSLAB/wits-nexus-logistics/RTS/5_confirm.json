@@ -5,78 +5,78 @@
         "core_version": "1.2.0",
         "bap_id": "ondc-api.kiko.live/ondc-seller-v2",
         "bap_uri": "https://ondc-api.kiko.live/ondc-seller-v2",
-        "bpp_id": "wits-ref-logistics-app.thewitslab.com",
-        "bpp_uri": "https://wits-ref-logistics-app.thewitslab.com",
-        "transaction_id": "c8f8688d-975d-49cb-bfa3-5997c7978eca",
-        "message_id": "d95a414d-7398-4832-b2db-79829a5b189a",
+        "bpp_id": "logistics-bpp-preprod.bharatvyapaar.com",
+        "bpp_uri": "https://logistics-bpp-preprod.bharatvyapaar.com",
+        "transaction_id": "dbdb8bcb-9bf3-4f6f-b256-af5441b6e6a3",
+        "message_id": "6d4f672a-563a-4933-95ce-3de6e9bd0884",
         "city": "std:080",
         "country": "IND",
-        "timestamp": "2024-07-15T12:45:12.311Z",
+        "timestamp": "2024-08-01T07:49:22.330Z",
         "ttl": "PT30S"
     },
     "message": {
         "order": {
-            "id": "2024-07-15-50986854",
+            "id": "2024-08-01-99238345",
             "state": "Created",
             "provider": {
-                "id": "82e0becf-45b7-4066-985c-e8e4bb79c367"
+                "id": "8550f311-c54f-4bdc-965e-95f854f7a500"
             },
             "items": [
                 {
                     "id": "Standard",
-                    "category_id": "Standard Delivery",
-                    "fulfillment_id": "854496ed-be2c-40bb-9816-870122e912be",
+                    "category_id": "Immediate Delivery",
+                    "fulfillment_id": "a314f309-0776-4b1a-af29-4fdb4642a6e2",
                     "descriptor": {
-                        "code": "P2H2P"
+                        "code": "P2P"
                     },
                     "time": {
                         "label": "TAT",
-                        "duration": "P4D",
-                        "timestamp": "2024-07-15"
+                        "duration": "PT60M",
+                        "timestamp": "2024-08-01"
                     }
                 }
             ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "15.00"
+                    "value": "99.12"
                 },
                 "breakup": [
                     {
-                        "@ondc/org/item_id": "Express",
+                        "@ondc/org/item_id": "Standard",
                         "@ondc/org/title_type": "delivery",
                         "price": {
                             "currency": "INR",
-                            "value": "15.00"
+                            "value": "84.00"
                         }
                     },
                     {
-                        "@ondc/org/item_id": "Express",
+                        "@ondc/org/item_id": "Standard",
                         "@ondc/org/title_type": "tax",
                         "price": {
                             "currency": "INR",
-                            "value": "0.00"
+                            "value": "15.12"
                         }
                     }
                 ]
             },
             "fulfillments": [
                 {
-                    "id": "854496ed-be2c-40bb-9816-870122e912be",
+                    "id": "a314f309-0776-4b1a-af29-4fdb4642a6e2",
                     "type": "Delivery",
                     "start": {
                         "time": {
-                            "duration": "P1D"
+                            "duration": "PT15M"
                         },
                         "person": {
-                            "name": "Vijendra Patidar"
+                            "name": "Suryansh Kourav"
                         },
                         "location": {
                             "gps": "12.982017, 77.587606",
                             "address": {
-                                "name": "Vijendra Grocery Store",
+                                "name": "Surya Shop",
                                 "building": "H-123, Surya Shop",
-                                "locality": "Lal Bangalore Bazaar",
+                                "locality": "Lal Bangalore Bazaar, Bangalore, Karnataka 560001, India",
                                 "city": "Bangalore",
                                 "state": "Karnataka",
                                 "country": "India",
@@ -84,38 +84,38 @@
                             }
                         },
                         "contact": {
-                            "phone": "9009120913",
-                            "email": "vijendra@linkites.com"
+                            "phone": "7689965008",
+                            "email": "suryaKouraav@gmail.com"
                         },
                         "instructions": {
                             "code": "3",
-                            "short_desc": "6266",
+                            "short_desc": "3358",
                             "long_desc": "Order Pick Up Confirmation Code"
                         }
                     },
                     "end": {
                         "person": {
-                            "name": "Apoorv"
+                            "name": "apoorv bangalore"
                         },
                         "location": {
-                            "gps": "28.678994,77.068735",
+                            "gps": "12.980737,77.594014",
                             "address": {
-                                "name": "Apoorv",
-                                "building": "202",
-                                "locality": "Inderjeet Gahlaut Marg",
-                                "city": "New Delhi",
-                                "state": "Delhi",
-                                "country": "IND",
-                                "area_code": "110041"
+                                "name": "apoorv bangalore",
+                                "building": "423",
+                                "locality": "Bangalore",
+                                "city": "Bangalore North",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560001"
                             }
                         },
                         "contact": {
-                            "phone": "9878678867",
-                            "email": "apoorv.saxena@thewitslab.com"
+                            "phone": "4534554354",
+                            "email": "help@kiko.live"
                         },
                         "instructions": {
-                            "code": "1",
-                            "short_desc": "3171",
+                            "code": "2",
+                            "short_desc": "6708",
                             "long_desc": "Delivery Confirmation Code"
                         }
                     },
@@ -125,7 +125,7 @@
                             "list": [
                                 {
                                     "code": "ready_to_ship",
-                                    "value": "yes"
+                                    "value": "no"
                                 }
                             ]
                         },
@@ -142,21 +142,21 @@
                 }
             ],
             "billing": {
-                "name": "Apoorv",
+                "name": "apoorv bangalore",
                 "address": {
-                    "name": "Apoorv",
-                    "building": "202",
-                    "locality": "Inderjeet Gahlaut Marg",
-                    "city": "New Delhi",
-                    "state": "Delhi",
-                    "country": "IND",
-                    "area_code": "110041"
+                    "name": "apoorv bangalore",
+                    "building": "423",
+                    "locality": "Bangalore",
+                    "city": "Bangalore North",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area_code": "560001"
                 },
-                "tax_number": "22AAAAA0000A1Z5",
-                "phone": "9878678867",
+                "tax_number": "06BZAHM6385P6Z2",
+                "phone": "4534554354",
                 "email": "apoorv.saxena@thewitslab.com",
-                "created_at": "2024-07-15T12:45:10.739Z",
-                "updated_at": "2024-07-15T12:45:10.739Z"
+                "created_at": "2024-08-01T07:49:21.825Z",
+                "updated_at": "2024-08-01T07:49:21.825Z"
             },
             "payment": {
                 "collected_by": "BAP",
@@ -167,29 +167,29 @@
                     {
                         "category_id": "Grocery",
                         "descriptor": {
-                            "name": "Aashirvaad Coriander Powder, 100 G"
+                            "name": "7 Up Product No. 2"
                         },
                         "quantity": {
                             "count": 1,
                             "measure": {
-                                "unit": "gram",
-                                "value": 100
+                                "unit": "millilitre",
+                                "value": 500
                             }
                         },
                         "price": {
                             "currency": "INR",
-                            "value": "46"
+                            "value": "35"
                         }
                     }
                 ],
                 "provider": {
                     "descriptor": {
-                        "name": "Vijendra Grocery Store"
+                        "name": "Surya Shop"
                     },
                     "address": {
-                        "name": "Vijendra Grocery Store",
+                        "name": "Surya Shop",
                         "building": "H-123, Surya Shop",
-                        "locality": "Lal Bangalore Bazaar",
+                        "locality": "Lal Bangalore Bazaar, Bangalore, Karnataka 560001, India",
                         "city": "Bangalore",
                         "state": "Karnataka",
                         "country": "India",
@@ -197,10 +197,10 @@
                     }
                 },
                 "order": {
-                    "id": "2024-07-15-671562",
+                    "id": "2024-08-01-728615",
                     "weight": {
-                        "unit": "gram",
-                        "value": 100
+                        "unit": "kilogram",
+                        "value": 0.455
                     },
                     "dimensions": {
                         "length": {
@@ -229,8 +229,8 @@
                     ]
                 }
             ],
-            "created_at": "2024-07-15T12:45:12.311Z",
-            "updated_at": "2024-07-15T12:45:12.311Z"
+            "created_at": "2024-08-01T07:49:22.330Z",
+            "updated_at": "2024-08-01T07:49:22.330Z"
         }
     }
 }
